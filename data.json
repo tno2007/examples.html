@@ -1,0 +1,430 @@
+{
+  "reviews": [
+    {
+      "store_review_id": 14119978,
+      "user_id": 20720360,
+      "rating": 5,
+      "order_number": "",
+      "comments": "Excellent service! Very professional and efficient!",
+      "date_created": "2022-01-21 12:44:58",
+      "store_branch_id": null,
+      "title": "",
+      "date": "3 months ago",
+      "reviewer": {
+        "first_name": "Garyn",
+        "last_name": "",
+        "verified_buyer": "no",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 14090145,
+      "user_id": 20670678,
+      "rating": 5,
+      "order_number": "Trade reference: 47682646 or 2021122203281",
+      "comments": "Exellent efficient and affordable service!",
+      "date_created": "2022-01-18 11:44:16",
+      "store_branch_id": null,
+      "title": "",
+      "date": "3 months ago",
+      "reviewer": {
+        "first_name": "Johan",
+        "last_name": "van Wyk",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 14081753,
+      "user_id": 20658692,
+      "rating": 5,
+      "order_number": "3910305038082",
+      "comments": "Good service, no fuss and always obliging.",
+      "date_created": "2022-01-17 13:42:48",
+      "store_branch_id": null,
+      "title": "",
+      "date": "3 months ago",
+      "reviewer": {
+        "first_name": "Oliver",
+        "last_name": "Rissik",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 14006954,
+      "user_id": 20531567,
+      "rating": 5,
+      "order_number": "",
+      "comments": "Great, professional service. Will use never use another company.",
+      "date_created": "2022-01-07 21:33:51",
+      "store_branch_id": null,
+      "title": "",
+      "date": "4 months ago",
+      "reviewer": {
+        "first_name": "Lynette",
+        "last_name": "Blackburn",
+        "verified_buyer": "no",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13993745,
+      "user_id": 20503698,
+      "rating": 5,
+      "order_number": "Johan Kruger & Associates in Pinetown - R3680.00 0",
+      "comments": "A great team who provides an excellent service. Thank you.",
+      "date_created": "2022-01-06 15:06:57",
+      "store_branch_id": null,
+      "title": "",
+      "date": "4 months ago",
+      "reviewer": {
+        "first_name": "Steve",
+        "last_name": "",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13975560,
+      "user_id": 20462197,
+      "rating": 5,
+      "order_number": "",
+      "comments": "I have been a customer for many years and have always received efficient and quality service. thankyou.  A Picoto.",
+      "date_created": "2022-01-04 15:01:01",
+      "store_branch_id": null,
+      "title": "",
+      "date": "4 months ago",
+      "reviewer": {
+        "first_name": "AJ",
+        "last_name": "Alves Picoto",
+        "verified_buyer": "no",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13896250,
+      "user_id": 20330384,
+      "rating": 5,
+      "order_number": "24th December 2021",
+      "comments": "Fast and efficient service.",
+      "date_created": "2021-12-24 15:26:06",
+      "store_branch_id": null,
+      "title": "",
+      "date": "4 months ago",
+      "reviewer": {
+        "first_name": "Colin",
+        "last_name": "Valentine",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13784284,
+      "user_id": 9609556,
+      "rating": 5,
+      "order_number": "",
+      "comments": "Happy in the sense of professional services and satisfaction.",
+      "date_created": "2021-12-13 09:04:16",
+      "store_branch_id": null,
+      "title": "",
+      "date": "5 months ago",
+      "reviewer": {
+        "first_name": "Schalk",
+        "last_name": "Van Der Sandt",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13765857,
+      "user_id": 20102770,
+      "rating": 5,
+      "order_number": "Ref: VIS201629",
+      "comments": "They are knowledgable, friendly and most of all professional. I would use them again.",
+      "date_created": "2021-12-11 03:09:38",
+      "store_branch_id": null,
+      "title": "",
+      "date": "5 months ago",
+      "reviewer": {
+        "first_name": "Ryan",
+        "last_name": "Jamieson",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13723221,
+      "user_id": 19898986,
+      "rating": 5,
+      "order_number": "",
+      "comments": "Great service, always.",
+      "date_created": "2021-12-07 13:59:18",
+      "store_branch_id": null,
+      "title": "",
+      "date": "5 months ago",
+      "reviewer": {
+        "first_name": "Nell",
+        "last_name": "",
+        "verified_buyer": "no",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13640194,
+      "user_id": 19700421,
+      "rating": 5,
+      "order_number": "November 29, 2021",
+      "comments": "I&#039;m in the process of dealing with Sable International and thus far I&#039;ve been SO impressed. Every single person I&#039;ve worked with from Robyn, Sheena, Lisa, &amp; Simone has been beyond helpful and accessible, whether it&#039;s on the phone or on email. They always go above and beyond. I can honestly say the service has been outstanding. Not only are they very helpful ALL THE TIME, but everything is done as quickly and efficiently as possible. Something that I truly appreciate. Thank you Sable International, I&#039;m one very happy customer.",
+      "date_created": "2021-11-30 01:00:18",
+      "store_branch_id": null,
+      "title": "",
+      "date": "5 months ago",
+      "reviewer": {
+        "first_name": "Jacquee",
+        "last_name": "Kahn",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13530406,
+      "user_id": 19514975,
+      "rating": 5,
+      "order_number": "",
+      "comments": "The team is a pleasure to work with. Friendly staff, very professional and highly responsive (even across continents).\n\nHighly recommended!",
+      "date_created": "2021-11-17 14:59:36",
+      "store_branch_id": null,
+      "title": "",
+      "date": "5 months ago",
+      "reviewer": {
+        "first_name": "Johan",
+        "last_name": "C Grobler",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13323602,
+      "user_id": 19115298,
+      "rating": 5,
+      "order_number": "zimmark@hotmail.co.za  Date used 22/10/2021",
+      "comments": "Love this service been a client since 2004 and never been one problem , Thank you for your professionalism",
+      "date_created": "2021-10-23 09:34:46",
+      "store_branch_id": null,
+      "title": "",
+      "date": "6 months ago",
+      "reviewer": {
+        "first_name": "Mark",
+        "last_name": "Reeves",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13320508,
+      "user_id": 19111271,
+      "rating": 5,
+      "order_number": "",
+      "comments": "Yes the services is 100% and is accurate",
+      "date_created": "2021-10-22 19:09:21",
+      "store_branch_id": null,
+      "title": "",
+      "date": "6 months ago",
+      "reviewer": {
+        "first_name": "Anonymous",
+        "last_name": "",
+        "verified_buyer": "no",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13229647,
+      "user_id": 18964282,
+      "rating": 5,
+      "order_number": "The service provided is for tax services in RSA, A",
+      "comments": "As a British Citizen with tax implications in RSA I use Sable for my tax issues. Always very efficient.",
+      "date_created": "2021-10-12 06:53:40",
+      "store_branch_id": null,
+      "title": "",
+      "date": "7 months ago",
+      "reviewer": {
+        "first_name": "George",
+        "last_name": "McMullan",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13201759,
+      "user_id": 18900253,
+      "rating": 5,
+      "order_number": "",
+      "comments": "Excellent service.",
+      "date_created": "2021-10-08 10:33:55",
+      "store_branch_id": null,
+      "title": "",
+      "date": "7 months ago",
+      "reviewer": {
+        "first_name": "Sahani",
+        "last_name": "",
+        "verified_buyer": "no",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13194396,
+      "user_id": 18871613,
+      "rating": 5,
+      "order_number": "7 October 2020",
+      "comments": "Incredibly efficient service. Thank you.",
+      "date_created": "2021-10-07 13:06:57",
+      "store_branch_id": null,
+      "title": "",
+      "date": "7 months ago",
+      "reviewer": {
+        "first_name": "Nikki",
+        "last_name": "Sallie",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13186237,
+      "user_id": 7323713,
+      "rating": 5,
+      "order_number": "",
+      "comments": "I have been using this company for many years and have no hesitation in recommending them, for service, efficiency, and courtesy",
+      "date_created": "2021-10-06 13:57:33",
+      "store_branch_id": null,
+      "title": "",
+      "date": "7 months ago",
+      "reviewer": {
+        "first_name": "Freda",
+        "last_name": "Harrison",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13186217,
+      "user_id": 8078206,
+      "rating": 5,
+      "order_number": "",
+      "comments": "100% customer service. I recommend this company purely on that. Nowhere better. Friendly and so helpful. Bravo!",
+      "date_created": "2021-10-06 13:54:19",
+      "store_branch_id": null,
+      "title": "",
+      "date": "7 months ago",
+      "reviewer": {
+        "first_name": "Joan",
+        "last_name": "Camm-Zermatten",
+        "verified_buyer": "no",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13079949,
+      "user_id": 18643275,
+      "rating": 5,
+      "order_number": "22 September 2021",
+      "comments": "Each and every person who works at Sable is friendly, professional and knowledgeable.  Fantastic service and support every step of the way.",
+      "date_created": "2021-09-22 17:57:08",
+      "store_branch_id": null,
+      "title": "",
+      "date": "7 months ago",
+      "reviewer": {
+        "first_name": "Tracey",
+        "last_name": "Botha",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    },
+    {
+      "store_review_id": 13074052,
+      "user_id": 18596550,
+      "rating": 5,
+      "order_number": "Hi Gregg,   Thank you for using SABLE FOREX. We ar",
+      "comments": "We have used Sable for many years now, and they have always taken care of our needs and continue to do so, without any worries. The customer service is outstanding. We feel secure and safe in the knowledge that Sable will always give us the right advice. We put our trust in them 100%, and would recommend them wholeheartedly.",
+      "date_created": "2021-09-22 03:16:15",
+      "store_branch_id": null,
+      "title": "",
+      "date": "7 months ago",
+      "reviewer": {
+        "first_name": "Diane",
+        "last_name": "&amp; Gregg",
+        "verified_buyer": "yes",
+        "address": ""
+      },
+      "ratings": [],
+      "images": [],
+      "branch": null
+    }
+  ],
+  "stats": {
+    "total_reviews": 1376,
+    "average_rating": "4.86"
+  },
+  "word": "Excellent",
+  "excellent_percentage": "93"
+}
