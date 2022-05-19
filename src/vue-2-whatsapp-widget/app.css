@@ -1,0 +1,299 @@
+
+  .floating-wpp {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-size: 12px;
+    transition: bottom 0.2s;
+    width: 380px;
+    max-width: 100%;
+    z-index: 999;
+  }
+
+  .floating-wpp .floating-wpp-button {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.4);
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    overflow: visible;
+    right: 0;
+    bottom: 0;
+  }
+
+  .floating-wpp .floating-wpp-button-image {
+    background: #f22613;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 33;
+    top: 9px;
+    left: 60px;
+  }
+
+  .floating-wpp .floating-wpp-button img,
+  .floating-wpp .floating-wpp-button svg {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    fill: rgb(255, 255, 255);
+  }
+
+  .floating-wpp:hover {
+    bottom: 17px;
+  }
+
+  .floating-wpp-head span {
+    text-align: center;
+  }
+
+  .floating-wpp-head span:first-child {
+    font-weight: 600;
+    font-size: 22px;
+    order: 2;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .floating-wpp-head span:last-child {
+    font-weight: 600;
+    font-size: 15px;
+    order: 1;
+  }
+
+  .floating-wpp-head span img {
+    border-radius: 50%;
+    width: 65px;
+  }
+
+  .floating-wpp .floating-wpp-popup .floating-wpp-head span::before {
+    content: "";
+    top: 70px;
+    left: 70px;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    background-color: var(--color);
+    display: block;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid rgb(18, 140, 126);
+  }
+
+  .floating-wpp-head span .headertext {
+    font-size: 13px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .floating-wpp:hover .floating-wpp-button {
+    box-shadow: 1px 2px 8px rgba(60, 60, 60, 0.4);
+  }
+
+  .floating-wpp .floating-wpp-popup {
+    border-radius: 6px;
+    background-color: #e5ddd5;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 1px 2px 8px rgba(60, 60, 60, 0.25);
+    width: 0;
+    height: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: bottom 0.1s ease-out, opacity 0.2s ease-out;
+    transform-origin: bottom;
+  }
+
+  .floating-wpp .floating-wpp-popup.active {
+    padding: 0 12px 12px;
+    width: 100%;
+    height: auto;
+    bottom: 82px;
+    opacity: 1;
+  }
+
+  .floating-wpp .floating-wpp-popup.active::before {
+    display: block;
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.08;
+    background-image: url("https://www.sableinternational.com/images/default-source/social/whatsapp-infographic.png");
+  }
+
+  .floating-wpp .floating-wpp-popup .floating-wpp-message {
+    margin: 20px 80px 80px 0px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px 10px 10px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: 14px;
+  }
+
+  .floating-wpp .floating-wpp-popup.active .floating-wpp-message {
+    opacity: 1;
+    position: relative;
+    transition-delay: 0.2s;
+    color: #000;
+  }
+
+  .floating-wpp .floating-wpp-popup.active .floating-wpp-message::before {
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    top: 0px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 00px solid transparent;
+    border-top: 10px solid #fff;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 15%);
+    opacity: 1;
+  }
+
+  .floating-wpp .floating-wpp-popup .floating-wpp-head {
+    opacity: 1;
+    position: relative;
+    text-align: left;
+    color: #fff;
+    margin: 0 -15px 10px;
+    padding: 20px 10px 20px 20px;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .floating-wpp .floating-wpp-input-message {
+    opacity: 1;
+    position: relative;
+    background-color: #fff;
+    margin: 10px -15px -15px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .floating-wpp .floating-wpp-input-message textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 5px;
+    margin: 10px 0;
+    width: 95%;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+  }
+
+  .floating-wpp .floating-wpp-btn-send {
+    font-size: 0;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .floating-wpp span#logo.online::before {
+    background-color: #5eba00;
+  }
+
+  .floating-wpp span#logo.away::before {
+    background-color: #f1c40f;
+  }
+
+  .floating-wpp span#logo.offline::before {
+    background-color: #343a40;
+  }
+
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: transparent;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .close::before {
+    transform: rotate(45deg);
+  }
+
+  .close::after {
+    transform: rotate(-45deg);
+  }
+
+  .close::before,
+  .close::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 2px;
+  }
+
+  .sendChat {
+    padding: 10px 12px;
+    border-radius: 24px;
+    border: none;
+    text-decoration: none;
+    background: rgb(20, 198, 86);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 5px auto 20px auto;
+    overflow: hidden;
+    appearance: none;
+    width: 75%;
+  }
+
+  .DefaultButton__DefaultButtonText {
+    margin: 0px 8px;
+  }
+
+  .floating-wpp-btn-send svg {
+    fill: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+  }
+
+  .currentTime {
+    text-align: right;
+    width: 100%;
+    display: block;
+    color: rgba(17, 17, 17, 0.5);
+  }
