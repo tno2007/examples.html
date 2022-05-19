@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "vue-browser-prod": "pnpm live-server --entry-file=./src/vue-browser-prod/index.html --port=3003",
     "vue-ratings": "pnpm live-server --entry-file=./src/vue-ratings/index.html --port=3001",
     "vue-starter": "pnpm live-server --entry-file=./src/vue-starter/index.html --port=3002"
   },
