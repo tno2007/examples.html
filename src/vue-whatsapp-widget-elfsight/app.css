@@ -1,29 +1,73 @@
-
-#portal-1 {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+.wa-widget {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-@keyframes es-chats-pulse{
-  0%{
-      transform:scale(1);
-      opacity:0;
+@keyframes es-chats-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0;
   }
-  50%{
-      opacity:1;
+  50% {
+    opacity: 1;
   }
-  100%{
-      transform:scale(1.2);
-      opacity:0;
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
 
+@keyframes typing-dot-1-animation {
+  0% {
+    background-color: rgb(182, 181, 186);
+  }
 
-.eapp-whatsapp-chat-root-layout-component, .eapp-whatsapp-chat-root-layout-component * {
-  box-sizing: border-box !important;
-  outline: none !important;
+  15% {
+    background-color: rgb(17, 17, 17);
+  }
+  25% {
+    background-color: rgb(182, 181, 186);
+  }
 }
 
-.eapp-whatsapp-chat-root-layout-component {
+@keyframes typing-dot-2-animation {
+  15% {
+    background-color: rgb(182, 181, 186);
+  }
+  25% {
+    background-color: rgb(17, 17, 17);
+  }
+  35% {
+    background-color: rgb(182, 181, 186);
+  }
+}
+
+@keyframes typing-dot-3-animation {
+  25% {
+    background-color: rgb(182, 181, 186);
+  }
+  35% {
+    background-color: rgb(17, 17, 17);
+  }
+  45% {
+    background-color: rgb(182, 181, 186);
+  }
+}
+
+.typing-dot-1 {
+  background-color: rgb(158, 157, 162);
+  animation-name: typing-dot-1-animation;
+}
+
+.typing-dot-2 {
+  animation-name: typing-dot-2-animation;
+}
+
+.typing-dot-3 {
+  animation-name: typing-dot-3-animation;
+}
+
+.xxxeapp-whatsapp-chat-root-layout-component {
   position: relative;
   width: 100%;
   -webkit-font-smoothing: antialiased;
@@ -85,7 +129,8 @@
   transform: rotate(-45deg);
 }
 
-.jquJIT::before, .jquJIT::after {
+.jquJIT::before,
+.jquJIT::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -119,7 +164,8 @@
   width: 64px;
 }
 
-.bIBMON::before, .bIBMON::after {
+.bIBMON::before,
+.bIBMON::after {
   content: "";
   position: absolute;
   border: 1px solid rgb(79, 206, 93);
@@ -129,7 +175,8 @@
   z-index: 0;
 }
 
-.bIBMON::before, .bIBMON::after {
+.bIBMON::before,
+.bIBMON::after {
   content: "";
   position: absolute;
   border: 1px solid rgb(79, 206, 93);
@@ -159,11 +206,13 @@
   width: 64px;
 }
 
-.ejCOPJ::before, .ejCOPJ::after {
+.ejCOPJ::before,
+.ejCOPJ::after {
   animation: 1s linear 0s infinite normal none running es-chats-pulse;
 }
 
-.ejCOPJ::before, .ejCOPJ::after {
+.ejCOPJ::before,
+.ejCOPJ::after {
   content: "";
   position: absolute;
   border: 1px solid rgb(79, 206, 93);
@@ -177,8 +226,6 @@
   animation-delay: 0.5s;
 }
 
-
-
 .eiAeRi {
   width: 10px;
   height: 10px;
@@ -189,11 +236,6 @@
   border-radius: 50%;
   right: 4px;
   top: 4px;
-}
-
-.eapp-whatsapp-chat-root-layout-component, .eapp-whatsapp-chat-root-layout-component * {
-  box-sizing: border-box !important;
-  outline: none !important;
 }
 
 .fOpOe {
@@ -290,6 +332,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  /*  */
   background-image: url(https://static.elfsight.com/apps/all-in-one-chat/avatars/general.jpeg);
 }
 
@@ -339,6 +382,7 @@
   width: 100%;
   z-index: 0;
   opacity: 0.08;
+  /*  */
   background-image: url(https://elfsight.com/assets/chats/patterns/whatsapp.png);
 }
 
@@ -369,48 +413,7 @@
   display: flex;
 }
 
-.devGdz {
-  background-color: rgb(158, 157, 162);
-  animation-name: dJHihm;
-}
-
-.eDCeRI {
-  height: 5px;
-  width: 5px;
-  margin: 0px 2px;
-  background-color: rgb(182, 181, 186);
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  top: 0px;
-}
-
-.iweHrw {
-  animation-name: goHzKU;
-}
-
-.eDCeRI {
-  height: 5px;
-  width: 5px;
-  margin: 0px 2px;
-  background-color: rgb(182, 181, 186);
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  top: 0px;
-}
-
-.ifXxgw {
-  animation-name: krEmjx;
-}
-
-.eDCeRI {
+.typing-dot {
   height: 5px;
   width: 5px;
   margin: 0px 2px;

@@ -2,17 +2,25 @@
   "name": "examples.html",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "vue-browser-prod": "pnpm live-server --entry-file=./src/vue-browser-prod/index.html --port=3003",
     "vue-ratings": "pnpm live-server --entry-file=./src/vue-ratings/index.html --port=3001",
-    "vue-starter": "pnpm live-server --entry-file=./src/vue-starter/index.html --port=3002"
+    "vue-starter": "pnpm live-server --entry-file=./src/vue-starter/index.html --port=3002",
+    "vue-whatsapp-widget-elfsight": "pnpm parcel serve src/vue-whatsapp-widget-elfsight/index.html",
+    "vanilla-array-merge": "pnpm parcel serve src/vanilla-array-merge/index.html",
+    "sitefinity-deferjs": "pnpm live-server --entry-file=./src/sitefinity-deferjs/index.html --port=3005"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "buffer": "^6.0.3",
+    "live-server": "^1.2.2",
+    "parcel": "^2.5.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }

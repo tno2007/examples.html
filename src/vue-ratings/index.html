@@ -131,6 +131,7 @@
             reviewData: null,
             pageNumber: 1, //
             pageSize: 3, // pageSize means number of reviews per page
+            current: "",
           };
         },
         methods: {
@@ -153,6 +154,14 @@
           },
         },
         computed: {
+          t() {
+            const isMedium = window.matchMedia("(min-width: 768px)");
+            if (isMedium.matches) {
+              this.current = "Male";
+            } else {
+              this.current = "Female";
+            }
+          },
           dataHasLoaded() {
             // check that reviewData is not undefined/null
             // if so it means data has loaded

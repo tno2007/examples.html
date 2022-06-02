@@ -10,13 +10,10 @@
   <body>
     <div id="app">
       <pre>{{ opened }}</pre>
-      <div
-        class="eapp-whatsapp-chat-root-layout-component eapps-whatsapp-chat-1-custom-css-hook"
-        id="portal-1"
-      >
-        <div type="floating" class="Window__Component-sc-1wwhwms-0 gFMxIq">
+      <pre>{{ t }}</pre>
+      <div class="wa-widget">
+        <div class="gFMxIq">
           <div
-            type="floating"
             class="Window__WindowComponent-sc-1wwhwms-1"
             :class="opened ? 'show': 'bivTZG'"
             style="width: 305px"
@@ -51,13 +48,13 @@
                 >
                   <div class="WhatsappDots__ComponentInner-sc-inte9t-1 kcAHIS">
                     <div
-                      class="WhatsappDots__Dot-sc-inte9t-2 WhatsappDots__DotOne-sc-inte9t-3 eDCeRI devGdz"
+                      class="WhatsappDots__Dot-sc-inte9t-2 WhatsappDots__DotOne-sc-inte9t-3 typing-dot typing-dot-1"
                     ></div>
                     <div
-                      class="WhatsappDots__Dot-sc-inte9t-2 WhatsappDots__DotTwo-sc-inte9t-4 eDCeRI iweHrw"
+                      class="WhatsappDots__Dot-sc-inte9t-2 WhatsappDots__DotTwo-sc-inte9t-4 typing-dot typing-dot-2"
                     ></div>
                     <div
-                      class="WhatsappDots__Dot-sc-inte9t-2 WhatsappDots__DotThree-sc-inte9t-5 eDCeRI ifXxgw"
+                      class="WhatsappDots__Dot-sc-inte9t-2 WhatsappDots__DotThree-sc-inte9t-5 typing-dot typing-dot-3"
                     ></div>
                   </div>
                 </div>
@@ -69,7 +66,8 @@
                     John Doe
                   </div>
                   <div class="WhatsappChat__Text-sc-1nhdht4-2 kZdIfu">
-                    Hi there 👋<br /><br />How can I help you?
+                    <div>Hi there 👋</div>
+                    <div>How can I help you?</div>
                   </div>
                   <div class="WhatsappChat__Time-sc-1nhdht4-5 isCfED">
                     15:56
@@ -132,13 +130,13 @@
       const { createApp } = Vue;
 
       const app = createApp({
-        components: {},
         data() {
           return {
             a: 0,
             b: 0,
             answer: null,
             opened: false,
+            current: null,
           };
         },
         methods: {
@@ -147,14 +145,19 @@
           },
         },
         computed: {
-          // any computed variables defined here
+          t() {
+            const isMedium = window.matchMedia("(min-width: 768px)");
+            if (isMedium.matches) {
+              this.current = "Male";
+            } else {
+              this.current = "Female";
+            }
+          },
         },
         mounted() {
           // if you want to run code when page/app has loaded
         },
       }).mount("#app");
-
-      //console.log(app);
     </script>
   </body>
 </html>
