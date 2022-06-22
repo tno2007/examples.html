@@ -7,9 +7,11 @@
     "vue-browser-prod": "pnpm live-server --entry-file=./src/vue-browser-prod/index.html --port=3003",
     "vue-ratings": "pnpm live-server --entry-file=./src/vue-ratings/index.html --port=3001",
     "vue-starter": "pnpm live-server --entry-file=./src/vue-starter/index.html --port=3002",
-    "vue-whatsapp-widget-elfsight": "pnpm parcel serve src/vue-whatsapp-widget-elfsight/index.html",
+    "vue-whatsapp-widget-elfsight": "pnpm parcel serve ./src/vue-whatsapp-widget-elfsight/index.html",
     "vanilla-array-merge": "pnpm parcel serve src/vanilla-array-merge/index.html",
-    "sitefinity-deferjs": "pnpm live-server --entry-file=./src/sitefinity-deferjs/index.html --port=3005"
+    "sitefinity-deferjs": "pnpm live-server --entry-file=./src/sitefinity-deferjs/index.html --port=3005",
+    "vue2-ashley-flowchart": "pnpm live-server --entry-file=./src/vue2-ashley-flowchart/index.html --port=3006",
+    "vue3-ashley-flowchart": "pnpm live-server --entry-file=./src/vue3-ashley-flowchart/index.html --port=3007"
   },
   "keywords": [],
   "author": "",
