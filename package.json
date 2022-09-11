@@ -11,7 +11,7 @@
     "vanilla-array-merge": "pnpm parcel serve src/vanilla-array-merge/index.html",
     "sitefinity-deferjs": "pnpm live-server --entry-file=./src/sitefinity-deferjs/index.html --port=3005",
     "vue2-ashley-flowchart": "pnpm live-server --entry-file=./src/vue2-ashley-flowchart/index.html --port=3006",
-    "vue3-ashley-flowchart": "pnpm live-server --entry-file=./src/vue3-ashley-flowchart/index.html --port=3007"
+    "vue2-ashley-points-calculator": "pnpm live-server --entry-file=./src/vue2-ashley-points-calculator/index.html --port=3007"
   },
   "keywords": [],
   "author": "",
