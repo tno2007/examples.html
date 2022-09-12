@@ -1,7 +1,30 @@
+var array = [
+  {
+    id: 1,
+    checked: true,
+    model: 16,
+  },
+  {
+    id: 2,
+    checked: false,
+    model: 17,
+  },
+];
+
+var currentIndex = array.findIndex((a) => a.checked);
+
+// comleted - nothing is null
+// incomplete - one or more items is null
+var hasNullItems = array.some((b) => b.model == null);
+
+console.log("hasNullItems", hasNullItems);
+// console.log("currentIndex", currentIndex);
+
 var pointsCalculator = new Vue({
   el: "#pointsCalculator",
   data: {
-    VisaQuiz: false,
+    // rather start with null
+    VisaQuiz: null,
     w: "100%",
     visas: [
       {
@@ -35,7 +58,23 @@ var pointsCalculator = new Vue({
     BIIVisas: [
       {
         checked: true,
-        vmodel: "BIIQuiz_1",
+        /*
+            Here you are storing a string value...            
+            vmodel: "BIIQuiz_1"
+
+            But you are also using this as a v-model, which will end up being a number.
+            Try not to make a variable store a mix of a 'string' and 'number'.
+            It should have one type, in this case, 'number'
+
+            Initialize it to either zero or null.
+            vmodel: 0,
+            vmodel: null
+
+            null is better, because you can assess whether the question has been answered.        
+
+
+         */
+        model: null,
         heading: "Age",
         subheading: "Which age band do you fit into?",
         options: [
@@ -50,7 +89,7 @@ var pointsCalculator = new Vue({
       },
       {
         checked: false,
-        vmodel: "BIIQuiz_2",
+        model: null,
         heading: "English language requirements",
         content:
           "<p>Read about:</p> <ul><li><a href='#'>Vocational English</a></li><li><a href='#'>Proficient English</a></li></ul>",
@@ -64,7 +103,7 @@ var pointsCalculator = new Vue({
       {
         checked: false,
         id: 3,
-        vmodel: "BIIQuiz_3",
+        model: null,
         heading: "Educational qualifications",
         subheading: "What is your highest qualification?",
         options: [
@@ -81,7 +120,7 @@ var pointsCalculator = new Vue({
       },
       {
         checked: false,
-        vmodel: "BIIQuiz_4",
+        model: null,
         heading: "Special endorsement",
         subheading:
           "The nominating State or Territory government agency has determined that your proposed business is of unique and important benefit to the State or Territory where the nominating government agency is located",
@@ -92,7 +131,7 @@ var pointsCalculator = new Vue({
       },
       {
         checked: false,
-        vmodel: "BIIQuiz_5",
+        model: null,
         heading: "Financial assets",
         subheading:
           "Net business and personal assets of you, your partner or you and your partner combined in each of the preceding 2 fiscal years of at least:",
@@ -106,7 +145,7 @@ var pointsCalculator = new Vue({
       },
       {
         checked: false,
-        vmodel: "BIIQuiz_6",
+        model: null,
         heading: "Business turnover",
         subheading:
           "You had an ownership interest in one or more main businesses that had an annual turnover in at least 2 of the 4 fiscal years immediately before the time of invitation to apply for the visa:",
@@ -120,7 +159,7 @@ var pointsCalculator = new Vue({
       },
       {
         checked: false,
-        vmodel: "BIIQuiz_7",
+        model: null,
         heading: "Business Innovation stream only - Business experience",
         subheading:
           "You have held one or more main businesses before you were invited to apply for the visa for:",
@@ -138,7 +177,7 @@ var pointsCalculator = new Vue({
       },
       {
         checked: false,
-        vmodel: "BIIQuiz_8",
+        model: null,
         heading: "Investor stream only - Investor experience",
         subheading:
           "Immediately before the time of application you held eligible investments of at least AUD100,000 held for:",
@@ -156,7 +195,7 @@ var pointsCalculator = new Vue({
       },
       {
         checked: false,
-        vmodel: "BIIQuiz_9",
+        model: null,
         heading: "Business innovation qualifications",
         subheading: "Select your business qualifications:",
         options: [
@@ -189,10 +228,6 @@ var pointsCalculator = new Vue({
             value: 10,
           },
         ],
-      },
-      {
-        checked: false,
-        vmodel: "BIIQuiz_10",
       },
     ],
 
@@ -227,7 +262,7 @@ var pointsCalculator = new Vue({
         checked: false,
         vmodel: "SIQuiz_3",
         heading: "Skilled employment experience",
-        subheading: "Overseas skilled employment – (outside Australia):",
+        subheading: "Overseas skilled employment - (outside Australia):",
         options: [
           { name: "Less than 3 years", value: 0 },
           { name: "At least 3 but less than 5 years", value: 5 },
@@ -840,10 +875,29 @@ var pointsCalculator = new Vue({
     ],
     SWResults: false,
   },
-
   methods: {
     // BI Method
-    BIIQuizonChange(e) {
+    biiQuizOnChange(currentIndex) {
+      // the points is automatically calculated in our computed function,
+      // so all we have to do is go to the next item, by updating the checked value
+      // it will also update the visibility, because we use v-show="b.checked"
+
+      // make the current question in-active
+      this.BIIVisas[currentIndex].checked = false;
+
+      // calculate next index
+      //const nextIndex = currentIndex + 1;
+      const nextIndex = currentIndex + 1;
+
+      // is the nextIndex less than the number of items?
+      if (nextIndex < this.BIIVisas.length) {
+        this.BIIVisas[nextIndex].checked = true;
+      }
+
+      // activate the 'next' question
+
+      /*
+
       console.log(e);
       console.log("a1", document.getElementsByName(e.target.id));
       var points = 0;
@@ -876,6 +930,7 @@ var pointsCalculator = new Vue({
         this.BIIResults = true;
         //document.getElementsByName("BIITotalPoints")[0].value = current;
       }
+      */
     },
     // SI Method
     SIQuizonChange(e) {
@@ -969,9 +1024,54 @@ var pointsCalculator = new Vue({
     },
   },
   computed: {
-    w: function (e) {
-      console.log(e);
-      return this.BIIResults.length();
+    biiVisasCurrentIndex() {
+      var index = this.BIIVisas.findIndex((b) => b.checked);
+      return index;
+    },
+    biiVisaPercentage() {
+      //one-liner: return parseInt((this.currentBiiVisasIndex + 1 / this.BIIVisas.length) * 100);
+      var percent =
+        ((this.biiVisasCurrentIndex + 1) / this.BIIVisas.length) * 100;
+      return parseInt(percent);
+    },
+    biiVisaTotalPoints: function () {
+      var totalPoints = 0;
+      this.BIIVisas.forEach((b) => {
+        totalPoints = totalPoints + parseInt(b.vmodel);
+      });
+      return totalPoints;
+    },
+    /*
+        To make the visibilty of the summary section more simple,
+        let use a computed variable to calculate whether the questionnaire is complete.
+
+        We know the questionnaire is complete, when all the questions were answered.
+        Because we made initialized all the variables to null, we know the questionnaire is 
+        complete when no questions is null anymore.
+
+        lets write a computed function for that
+    */
+    biiVisaQuestionnaireCompleted: function () {
+      // find any items who's vmodel is still null
+      //const completed = this.BIIVisas.find((b) => b.vmodel == null);
+
+      /*
+        hasNullValues = true =>
+            not complete => 
+                completed = false
+
+        hasNullValues = false =>
+            is complete => 
+                completed = true
+      */
+      var hasNullValues = this.BIIVisas.find((b) => b.model == null);
+
+      if (hasNullValues) {
+        return false;
+      } else {
+        // questionnaire is complete
+        return true;
+      }
     },
   },
 });
