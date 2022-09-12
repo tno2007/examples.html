@@ -1015,7 +1015,7 @@ var pointsCalculator = new Vue({
     biiVisaTotalPoints: function () {
       var totalPoints = 0;
       this.BIIVisas.forEach((b) => {
-        totalPoints = totalPoints + parseInt(b.vmodel);
+        totalPoints = totalPoints + parseInt(b.model);
       });
       return totalPoints;
     },

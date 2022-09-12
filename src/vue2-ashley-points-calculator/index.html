@@ -135,11 +135,7 @@
                                 Always use a v-model to store or set values.
                                 <input v-model="answer" />
                             -->
-                          <input
-                            type="number"
-                            :name="biivisa.vmodel"
-                            value="0"
-                          />
+                          <input disabled v-model="biivisa.model" />
                         </div>
                       </div>
                       <!-- reset -->
@@ -150,12 +146,7 @@
                           </button>
                         </div>
                         <div class="col-6">
-                          <input
-                            class="value"
-                            type="number"
-                            name="BIITotalPoints"
-                            value="0"
-                          />
+                          <input disabled v-model="biiVisaTotalPoints" />
                         </div>
                       </div>
                     </div>
