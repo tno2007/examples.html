@@ -1,25 +1,3 @@
-var array = [
-  {
-    id: 1,
-    checked: true,
-    model: 16,
-  },
-  {
-    id: 2,
-    checked: false,
-    model: 17,
-  },
-];
-
-var currentIndex = array.findIndex((a) => a.checked);
-
-// comleted - nothing is null
-// incomplete - one or more items is null
-var hasNullItems = array.some((b) => b.model == null);
-
-console.log("hasNullItems", hasNullItems);
-// console.log("currentIndex", currentIndex);
-
 var pointsCalculator = new Vue({
   el: "#pointsCalculator",
   data: {
