@@ -21,7 +21,12 @@
                 <div class="visaHeading">
                   <h2>Points calculator</h2>
                 </div>
-                <!-- Init VisaQuiz to null, then you can use straight VisaQuiz -->
+                <!-- 
+                  Initialize VisaQuiz to null, then you can use straight !VisaQuiz 
+                
+                  !VisaQuiz means = if variable is undefined or null
+                  ! also refer to false if used with a boolean variable
+                -->
                 <div class="selectVisaButtons" v-if="!VisaQuiz">
                   <p>Select visa subclass</p>
 
@@ -32,7 +37,7 @@
                         v-model="VisaQuiz"
                         :value="visa.val"
                       />
-                      &nbsp;<span v-html="visa.heading"></span>
+                      &nbsp;<span>{{ visa.heading }}</span>
                     </label>
                   </div>
                 </div>
@@ -49,7 +54,7 @@
                     <a href="#">points table.</a>
                   </p>
 
-                  <div v-show="biiVisaQuestionnaireCompleted == false">
+                  <div v-show="!biiVisaQuestionnaireCompleted">
                     <!-- Progress Bar -->
                     <div>
                       <h2>
@@ -57,7 +62,7 @@
                              find the index of the current visible/checked visa 
                              var currentIndex = array.findIndex(a => a.checked).
 
-                             Just use one <span> and use moustache tags inside.
+                             Just use one <span> and use moustache tags - {{}} -  inside.
 
                              v-html should only be use for vue data variables that contains html content.
                              Eg.
