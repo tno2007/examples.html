@@ -11,7 +11,9 @@
     "vanilla-array-merge": "pnpm parcel serve src/vanilla-array-merge/index.html",
     "sitefinity-deferjs": "pnpm live-server --entry-file=./src/sitefinity-deferjs/index.html --port=3005",
     "vue2-ashley-flowchart": "pnpm live-server --entry-file=./src/vue2-ashley-flowchart/index.html --port=3006",
-    "vue2-ashley-points-calculator": "pnpm live-server --entry-file=./src/vue2-ashley-points-calculator/index.html --port=3007"
+    "vue2-ashley-points-calculator-1": "pnpm live-server --entry-file=./src/vue2-ashley-points-calculator/revision-01/index.html --port=3007",
+    "vue2-ashley-points-calculator-2a": "pnpm live-server --mount=/:./src/vue2-ashley-points-calculator/revision-02/a --port=3008",
+    "vue2-ashley-points-calculator-2b": "pnpm live-server --mount=/:./src/vue2-ashley-points-calculator/revision-02/b --port=3009"
   },
   "keywords": [],
   "author": "",
