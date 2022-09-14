@@ -27,8 +27,6 @@ Revision 2
             </div>
 
             <div class="selectVisaButtons" v-if="!VisaQuiz">
-              <p>Select visa subclass</p>
-
               <div v-for="(visa, index) in visas" :key="index">
                 <div class="main-section">
                   <label>
@@ -40,7 +38,7 @@ Revision 2
             </div>
 
             <!-- Visa questions -->
-            <div v-if="VisaQuiz">
+            <div v-if="VisaQuiz && !questionnaireCompleted">
               <h4>{{ selectedVisa.heading }}</h4>
               <p>
                 To check how many points you might score use the
@@ -70,7 +68,7 @@ Revision 2
                 <!-- Visa questions -->
                 <div
                   v-for="(q, index) in selectedVisa.questions"
-                  class="BII_Visa form-group"
+                  class="form-group"
                   v-show="q.checked"
                 >
                   <h5>{{ q.heading }}</h5>
@@ -82,7 +80,7 @@ Revision 2
                     v-model="q.model"
                     @input="questionOnChange(index)"
                   >
-                    <option selected disabled>Please select</option>
+                    <option disabled :value="null">Please select</option>
                     <option v-for="o in q.options" :value="o.value">
                       {{ o.name }}
                     </option>
@@ -92,6 +90,39 @@ Revision 2
               </div>
             </div>
             <!-- / Visa questions -->
+
+            <!-- Point summary -->
+            <div class="resultWrapper" v-if="questionnaireCompleted">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3>Your total points summary</h3>
+                  </div>
+                </div>
+
+                <div
+                  class="row mt-4 mb-4"
+                  v-for="(q, index) in selectedVisa.questions"
+                >
+                  <div class="col-6" v-html="q.heading"></div>
+                  <div class="col-6">
+                    <input type="text" disabled v-model="q.model" />
+                  </div>
+                </div>
+                <!-- reset -->
+                <div class="reset row mt-4 mb-4">
+                  <div class="col-6">
+                    <button class="reset" v-on:click="resetCalculator">
+                      Reset Calculator
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <input type="text" v-model="totalPoints" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Point summary -->
           </div>
         </div>
       </div>

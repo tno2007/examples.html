@@ -91,7 +91,7 @@
                     <!-- Select Options (Loop) -->
                     <div
                       v-for="(biivisa, index) in BIIVisas"
-                      class="BII_Visa form-group"
+                      class="form-group"
                       v-show="biivisa.checked"
                     >
                       <h5>{{ biivisa.heading }}</h5>
@@ -103,7 +103,7 @@
                         v-model="biivisa.model"
                         @input="biiQuizOnChange(index)"
                       >
-                        <option selected disabled>Please select</option>
+                        <option disabled :value="null">Please select</option>
                         <option
                           v-for="option in biivisa.options"
                           :value="option.value"
