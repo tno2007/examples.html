@@ -792,10 +792,10 @@ var pointsCalculator = new Vue({
     ],
   },
   methods: {
-    questionOnChange(currentIndex) {
-      // the points is automatically calculated in our computed function,
-      // so all we have to do is go to the next item, by updating the checked value
-      // it will also update the visibility, because we use v-show="b.checked"
+    questionOnChange(currentIndex, optionPointsValue) {
+      // update the model value manually,
+      // since we are not using a html input (eg. input, radio, select)
+      this.selectedVisa.questions[currentIndex].model = optionPointsValue;
 
       // make the current question in-active
       this.selectedVisa.questions[currentIndex].checked = false;

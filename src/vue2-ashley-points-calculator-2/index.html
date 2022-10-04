@@ -75,15 +75,12 @@
                     <!-- The reason behind making these changes is due to the option long texts overlapping to the next screen, I used this codepen to build this div select option: https://codepen.io/ashleyqhim4321/pen/abGYYJO  -->
                     <div class="select" @click="show = !show" v-model="q.model">
                       Please Select
-                      <div
-                        @click="questionOnChange(index)"
-                        class="wrapper"
-                        v-if="show"
-                      >
+                      <div class="wrapper" v-if="show">
                         <div
                           class="option"
                           v-for="o in q.options"
                           :value="o.value"
+                          @click="questionOnChange(index, o.value)"
                         >
                           {{ o.name }}
                         </div>
