@@ -1,5 +1,6 @@
     https://codepen.io/ashleyqhim4321/pen/MWGyyBa
 
+
 ## notes
 
 - old version of bootstap... maybe try 4.6.x
@@ -21,7 +22,31 @@
       - visible = true;
       - visible = false;
 
-## sunday notes
+## rev 2 notes
+
+- v-bind
+
+```
+v-bind:value="items.value"
+v-bind:class="items.value"
+v-bind:id="items.value"
+```
+
+is the same as...
+
+```
+:value="items.value"
+:class="items.value"
+:id="items.value"
+```
+
+Source:
+
+    https://vuejs.org/guide/essentials/class-and-style.html
+
+- documentation
+  - https://vuejs.org is the best
+  - v3 / v2
 
 ### Do's and dont's
 

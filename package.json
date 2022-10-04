@@ -14,6 +14,9 @@
     "vue2-ashley-points-calculator": "pnpm live-server --entry-file=./src/vue2-ashley-points-calculator/index.html --port=3007",
     "vanilla-html5-validation-submit": "pnpm live-server --mount=/:./src/vanilla-html5-validation-submit --port=3011",
     "vue-3-submission-questionnaire": "npm parcel ./src/vue-3-submission-questionnaire/index.html",
+    "vue2-ashley-points-calculator-1": "pnpm live-server --entry-file=./src/vue2-ashley-points-calculator/revision-01/index.html --port=3007",
+    "vue2-ashley-points-calculator-2a": "pnpm live-server --mount=/:./src/vue2-ashley-points-calculator/revision-02/a --port=3008",
+    "vue2-ashley-points-calculator-2b": "pnpm live-server --mount=/:./src/vue2-ashley-points-calculator/revision-02/b --port=3009",
     "vue2-ashley-points-calculator-2": "scripty"
   },
   "keywords": [],
