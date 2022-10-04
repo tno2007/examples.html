@@ -11,7 +11,10 @@
     "vanilla-array-merge": "pnpm parcel serve src/vanilla-array-merge/index.html",
     "sitefinity-deferjs": "pnpm live-server --entry-file=./src/sitefinity-deferjs/index.html --port=3005",
     "vue2-ashley-flowchart": "pnpm live-server --entry-file=./src/vue2-ashley-flowchart/index.html --port=3006",
-    "vue2-ashley-points-calculator": "pnpm live-server --entry-file=./src/vue2-ashley-points-calculator/index.html --port=3007"
+    "vue2-ashley-points-calculator": "pnpm live-server --entry-file=./src/vue2-ashley-points-calculator/index.html --port=3007",
+    "vanilla-html5-validation-submit": "pnpm live-server --mount=/:./src/vanilla-html5-validation-submit --port=3011",
+    "vue-3-submission-questionnaire": "npm parcel ./src/vue-3-submission-questionnaire/index.html",
+    "vue2-ashley-points-calculator-2": "scripty"
   },
   "keywords": [],
   "author": "",
@@ -19,10 +22,11 @@
   "devDependencies": {
     "buffer": "^6.0.3",
     "live-server": "^1.2.2",
-    "parcel": "^2.5.0",
+    "parcel": "^2.7.0",
     "process": "^0.11.10"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "scripty": "^2.1.1"
   }
 }
