@@ -829,6 +829,8 @@ var pointsCalculator = new Vue({
       return index;
     },
     percentage() {
+      if (!this.selectedVisa.questions) return 0;
+
       var percent =
         ((this.currentVisaQuestionIndex + 1) /
           this.selectedVisa.questions.length) *
