@@ -17,7 +17,8 @@
     "vue2-ashley-points-calculator-1": "pnpm live-server --entry-file=./src/vue2-ashley-points-calculator/revision-01/index.html --port=3007",
     "vue2-ashley-points-calculator-2a": "pnpm live-server --mount=/:./src/vue2-ashley-points-calculator/revision-02/a --port=3008",
     "vue2-ashley-points-calculator-2b": "pnpm live-server --mount=/:./src/vue2-ashley-points-calculator/revision-02/b --port=3009",
-    "vue2-ashley-points-calculator-2": "scripty"
+    "vue2-ashley-points-calculator-2": "scripty",
+    "vue2and3": "scripty"
   },
   "keywords": [],
   "author": "",
