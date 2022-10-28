@@ -1,0 +1,1 @@
+pnpm parcel ./src/bs-jq-modal/index.html
