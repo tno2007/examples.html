@@ -19,7 +19,8 @@
     "vue2-ashley-points-calculator-2b": "pnpm live-server --mount=/:./src/vue2-ashley-points-calculator/revision-02/b --port=3009",
     "vue2-ashley-points-calculator-2": "scripty",
     "vue2and3": "scripty",
-    "bs-jq-modal": "scripty"
+    "bs-jq-modal": "scripty",
+    "js-tree-json": "scripty"
   },
   "keywords": [],
   "author": "",
