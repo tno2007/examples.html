@@ -1,1 +1,1 @@
-pnpm parcel ./src/vue2and3/index.html
+pnpm live-server ./src/vue2and3/index.html
