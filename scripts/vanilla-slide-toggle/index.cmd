@@ -1,0 +1,1 @@
+pnpm parcel ./src/vanilla-slide-toggle/index.html
