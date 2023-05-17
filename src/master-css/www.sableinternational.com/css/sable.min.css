@@ -11149,7 +11149,7 @@ table th {
 .flag-box {
   width: 32px;
   height: 32px;
-  background-image: url(/ResourcePackages/SableMasterCore/assets/src/images/flags32.png);
+  background-image: url(../images/flags32.png);
   display: inline-block;
 }
 .flag-box.GBP {
@@ -11204,7 +11204,7 @@ table th {
 .flag-box.large {
   width: 64px;
   height: 64px;
-  background-image: url(/ResourcePackages/SableMasterCore/assets/src/images/flags64.png);
+  background-image: url(../images/flags64.png);
 }
 .flag-box.large.GBP {
   background-position: -500px -200px;
@@ -11414,7 +11414,7 @@ table th {
   background-size: contain;
 }
 .nav-cards.tertiary-pages.sa-visa-outline {
-  background: url(/images/default-source/immigration/saoutline.jpg) center
+  background: url(../images/default-source/immigration/saoutline.jpg) center
     no-repeat;
   background-size: contain;
 }
@@ -12437,7 +12437,7 @@ section.bg-silver-light .content-wide {
 @media (min-width: 1101px) {
   .roadshow-banner .spiral-roadshow-bg {
     display: block;
-    background: url(/images/default-source/citizenship/spiral_circle.png)
+    background: url(../images/default-source/citizenship/spiral_circle.png)
       no-repeat center center;
     background-size: contain;
     height: 470px;
