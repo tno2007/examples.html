@@ -9,53 +9,24 @@
     <title>
         Cross-border Financial and Immigration Solutions | Sable International
     </title>
-    <link rel="apple-touch-icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <!-- Google Tag Manager 
-    <script>
-        (function (w, d, l, i, t) {
-            function init() {
-                if (w.didInit) {
-                    return false;
-                }
-                w.didInit = true;
-                var es = d.getElementsByTagName("script")[0],
-                    ns = d.createElement("script"),
-                    lq = l !== "dataLayer" ? "&l=" + l : "";
-                ns.onload = function () {
-                    w[l] = w[l] || [];
-                    w[l].push({
-                        "gtm.start": new Date().getTime(),
-                        event: 'gtm.js'
-                    });
-                };
-                ns.async = true;
-                ns.src = "https://www.googletagmanager.com/gtm.js?id=" + i + lq;
-                es.parentNode.insertBefore(ns, es);
-                return false;
-            }
 
-            function onEvent(event) {
-                init();
-                event.currentTarget.removeEventListener(event.type, onEvent);
-            }
+    <script src="./js/master.min.js"></script>
 
-            d.addEventListener("DOMContentLoaded", function () {setTimeout(init, t)});
-            d.addEventListener("scroll", onEvent);
-            d.addEventListener("mousemove", onEvent);
-            d.addEventListener("touchstart", onEvent);
-        })(window, document, "dataLayer", "GTM-WGHV9L", 3500);
-    </script>--> <!-- End Google Tag Manager -->
 
+    <link rel="apple-touch-icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="preload" href="fonts/MontserratVF.woff2" as="font"
         type="font/woff2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/inline.min.css">
-
     <link
         rel="stylesheet"
         href="css/sable.min.css" />
+        <link rel="stylesheet" href="css/home.min.css">
 
+        <link
+        href="https://www.sableinternational.com/ResourcePackages/SableMasterCore/assets/dist/css/widgets/members/012016848035503913402/members.min.css"
+        type="text/css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';">
 
     <script type="deferjs">
         window.Defer.js("https://cdn.jsdelivr.net/combine/npm/jquery@3.6.0,npm/popper.js@1.16.1,npm/bootstrap@4.6.0,npm/blazy@1.8.2,npm/waypoints@4.0.1/lib/noframework.waypoints.min.js,gh/osvaldasvalutis/disqusLoader.js/disqusloader.min.js,npm/@splidejs/splide@3.6.12/dist/js/splide.min.js,npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.min.js", "cdnScripts", 4000, () => {
@@ -89,7 +60,7 @@
     <meta name="google-site-verification" content="udUIYL2Xqhbw7bmCqxaja-_4IG-nc8u180hn-4Z3uk8" />
     <link rel="canonical" href="https://www.sableinternational.com" />
 
-    <link rel="stylesheet" href="css/home.min.css">
+
 
     <meta name="description"
         content="We specialise in cross-border financial and immigration advice and solutions. We can help you move overseas, invest offshore or expand your business." />
@@ -97,7 +68,8 @@
 
 <body>
     <header>
-        <nav class="master-nav navbar bg-white navbar-expand-lg justify-content-sm-start fixed-top">
+        <!-- -->
+        <nav class="master-nav navbar bg-white navbar-expand-lg justify-content-sm-start x-fixed-top x-top:10">
             <div class="container-fluid">
                 <div class="navbar-brand order-1 order-lg-0 ml-lg-0 mr-auto"> <a
                         href="https://www.sableinternational.com" title="Sable International home page">
@@ -1602,9 +1574,9 @@
                 <div id="Banner_C076_Col00" class="sf_colsIn custom-banner-image darkBanner"
                     data-sf-element="custom-banner-image" data-placeholder-label="Custom banner image">
                     <picture>
-                        <source srcset="/images/default-source/banners/earth-background.jpg?sfvrsn=2f873e03_18"
+                        <source srcset="images/default-source/banners/earth-background.jpg?sfvrsn=2f873e03_18"
                             media="(min-width: 1400px)">
-                        <source srcset="/images/default-source/banners/earth-background.jpg?sfvrsn=2f873e03_18"
+                        <source srcset="images/default-source/banners/earth-background.jpg?sfvrsn=2f873e03_18"
                             media="(min-width: 1200px)">
                         <source srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs="
                             media="(min-width: 992px)">
@@ -3167,9 +3139,7 @@
                     <h2>Meet our directors</h2>
                 </div>
             </div>
-            <link
-                href="https://www.sableinternational.com/ResourcePackages/SableMasterCore/assets/dist/css/widgets/members/012016848035503913402/members.min.css"
-                type="text/css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';">
+
 
             <div class="mtt-widget">
                 <div class="splide mtt-widget-list">

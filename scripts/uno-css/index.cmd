@@ -1,0 +1,1 @@
+pnpm parcel ./src/uno-css/index.html

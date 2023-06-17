@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--
+    Breakpoint prefix	Minimum width	CSS
+    sm	640px	@media (min-width: 640px) { ... }
+    md	768px	@media (min-width: 768px) { ... }
+    lg	1024px	@media (min-width: 1024px) { ... }
+    xl	1280px	@media (min-width: 1280px) { ... }
+    2xl	1536px	@media (min-width: 1536px) { ... }
+  -->
+  <body class="bg-black sm:bg-white">
+    <div
+      class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 gap-2 p-3"
+      un-cloak
+    >
+      <div class="bg-sky-50 aspect-square">
+        <div class="font-sans text-8xl text-center">A</div>
+      </div>
+      <div class="bg-sky-100 aspect-square"></div>
+      <div class="bg-sky-200 aspect-square"></div>
+      <div class="bg-sky-300 aspect-square"></div>
+      <div class="bg-sky-400 aspect-square"></div>
+      <div class="bg-sky-500 aspect-square"></div>
+      <div class="bg-sky-600 aspect-square"></div>
+      <div class="bg-sky-700 aspect-square"></div>
+      <div class="bg-sky-800 aspect-square"></div>
+      <div class="bg-sky-900"></div>
+      <div class="bg-yellow-500"></div>
+      <div class="bg-orange-600"></div>
+    </div>
+  </body>
+
+  <!--
+<script src="js/uno.global.js"></script>
+  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js"></script>
+  <script>
+    // pass unocss options
+    window.__unocss = {
+      rules: [
+        // custom rules...
+      ],
+      presets: [
+        // custom presets...
+      ],
+      // ...
+    };
+  </script>
+</html>

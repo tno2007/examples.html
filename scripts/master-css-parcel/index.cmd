@@ -1,1 +1,1 @@
-pnpm parcel ./src/master-css/index.html
+pnpm parcel ./src/master-css/www.sableinternational.com/index.html
