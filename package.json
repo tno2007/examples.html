@@ -23,7 +23,10 @@
     "js-tree-json": "scripty",
     "master-css": "scripty",
     "master-css-parcel": "scripty",
-    "uno-css": "scripty"
+    "uno-css": "scripty",
+    "my-olark": "scripty",
+    "sable-twind": "scripty",
+    "group-items-test": "pnpm parcel ./src/group-items-test/index.html"
   },
   "keywords": [],
   "author": "",
@@ -32,10 +35,15 @@
     "buffer": "^6.0.3",
     "live-server": "^1.2.2",
     "parcel": "^2.8.3",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "rome": "12.1.2"
   },
   "dependencies": {
+    "@dinero.js/currencies": "2.0.0-alpha.14",
     "axios": "^1.3.2",
+    "currency.js": "^2.0.4",
+    "dinero.js": "2.0.0-alpha.14",
+    "group-items": "^2.2.1",
     "scripty": "^2.1.1"
   }
 }

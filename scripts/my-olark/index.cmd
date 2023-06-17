@@ -1,0 +1,1 @@
+pnpm parcel ./src/my-olark/index.html
