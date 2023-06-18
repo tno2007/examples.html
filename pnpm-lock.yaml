@@ -14,6 +14,9 @@ dependencies:
   '@formkit/vue':
     specifier: ^0.17.3
     version: 0.17.3(vue@3.3.4)
+  '@jaredmcateer/ngvue3':
+    specifier: ^0.5.0
+    version: 0.5.0
   angular:
     specifier: ^1.8.3
     version: 1.8.3
@@ -195,6 +198,10 @@ packages:
       - tailwindcss
       - unocss
       - windicss
+    dev: false
+
+  /@jaredmcateer/ngvue3@0.5.0:
+    resolution: {integrity: sha512-rXNbR/vSAVZThJ15jQUPXD6eqRdVXBy5ElZFklHBSfqgJBjaLPn3oSUhqQA2tH+ACYVb9njTbNOAE2maL6VIAQ==}
     dev: false
 
   /@jridgewell/sourcemap-codec@1.4.15:
