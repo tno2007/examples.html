@@ -1,0 +1,1 @@
+pnpm parcel build ./src/tailwind-testdrive/src/index.html --dist-dir=./dist/tailwind-testdrive/

@@ -1,3 +1,4 @@
+pnpm;
 /*!
  *
  * elfsight.com
@@ -1253,7 +1254,7 @@
           });
       })();
       t.b = Le;
-    }.call(this, n(280)));
+    }).call(this, n(280));
   },
   function (e, t, n) {
     (function (t) {
@@ -1269,7 +1270,7 @@
           return this;
         })() ||
         Function("return this")();
-    }.call(this, n(144)));
+    }).call(this, n(144));
   },
   function (e, t) {
     (e.exports = function (e, t, n) {
@@ -8694,7 +8695,7 @@
           t[i + n] = e[i];
         return i;
       }
-    }.call(this, n(144)));
+    }).call(this, n(144));
   },
   function (e, t, n) {
     "use strict";
