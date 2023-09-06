@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>esm-auto-animate</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <FormKit type="form">
+          <FormKitSchema :schema="schema" />
+        </FormKit>
+        <ul v-auto-animate>
+          <li v-for="item in items" :key="item" @click="removeItem(item)">
+            {{ item }}
+          </li>
+        </ul>
+        <button>Click</button>
+        <div v-auto-animate>
+          <div>
+            <button @click="show = !show">toggle</button>
+            <label for="a">hello</label><br />
+            <input type="text" id="a" />
+          </div>
+          <div v-if="show">
+            <label for="b">hello</label><br />
+            <input type="text" id="b" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+        "@formkit/vue": "https://cdn.jsdelivr.net/npm/@formkit/vue/dist/index.mjs"
+        Failed to resolve module specifier "@formkit/core". 
+
+        "https://cdn.jsdelivr.net/npm/@formkit/vue/+esm"
+        resolve component: formkit
+
+
+    -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.js",
+          "@formkit/auto-animate/vue": "https://esm.run/@formkit/auto-animate/vue",
+          "canvas-confetti": "https://esm.run/canvas-confetti",
+          "@formkit/vue": "https://esm.sh/@formkit/vue@0.19.3"
+        }
+      }
+    </script>
+    <script type="module">
+      import { createApp, ref } from "vue";
+      import {
+        plugin,
+        defaultConfig,
+        FormKit,
+        FormKitSchema,
+      } from "@formkit/vue";
+      import { autoAnimatePlugin } from "@formkit/auto-animate/vue";
+      import confetti from "canvas-confetti";
+
+      //import { install } from "@twind/core";
+      //import config from "./twind.config";
+      // activate twind - must be called at least once
+      //install();
+
+      //confetti();
+
+      createApp({
+        setup() {
+          const items = ref(["😏", "😐", "😑", "😒", "😕"]);
+          function removeItem(toRemove) {
+            items.value = items.value.filter((item) => item !== toRemove);
+          }
+          function addItem() {
+            items.value.push();
+          }
+          const message = ref("Hello Vue!");
+          const show = ref(false);
+          return {
+            show,
+            removeItem,
+            items,
+            message,
+            FormKitSchema,
+          };
+        },
+      })
+        .use(plugin, defaultConfig)
+        .use(autoAnimatePlugin)
+        .mount("#app");
+    </script>
+  </body>
+</html>
