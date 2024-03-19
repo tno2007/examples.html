@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio
+      controls
+      src="https://mdn.github.io/webaudio-examples/audio-basics/outfoxing.mp3"
+    ></audio>
+
+    <script>
+      const audio = document.querySelector("audio");
+
+      // Handle page visibility change:
+      // - If the page is hidden, pause the audio
+      // - If the page is shown, play the audio
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          audio.pause();
+        } else {
+          audio.play();
+        }
+      });
+    </script>
+  </body>
+</html>
