@@ -1,47 +1,50 @@
 //This JS file will get values from user and calc PAYE for 2023/2024
 //set variables
-var monthlyIncome = 0;
-var annualIncome = 0; //formatted annual income
-var annualInc = 0; //raw annual income
-var monthlyTax = 0;
-var annualTax = 0;
-var nettoIncome = 0;
-var annualRebate = 0;
-var UIF = 0;
-var theVal = 0;
+let monthlyIncome = 0;
+let annualIncome = 0; //formatted annual income
+let annualInc = 0; //raw annual income
+let monthlyTax = 0;
+let annualTax = 0;
+const nettoIncome = 0;
+let annualRebate = 0;
+let UIF = 0;
+let theVal = 0;
+
 
 //tax bands
-var level1_bottom = 0;
-var level1_top = 237100;
-var level1_tax = 0.18;
-var level2_bottom = 237101;
-var level2_top = 370500;
-var level2_tax = 0.26;
-var level3_bottom = 370501;
-var level3_top = 512800;
-var level3_tax = 0.31;
-var level4_bottom = 512801;
-var level4_top = 673000;
-var level4_tax = 0.36;
-var level5_bottom = 673001;
-var level5_top = 857900;
-var level5_tax = 0.39;
-var level6_bottom = 857901;
-var level6_top = 1817000;
-var level6_tax = 0.41;
-var level6_bottom = 1817001;
-var level6_top = 99999900000;
-var level6_tax = 0.45;
-var UIFcap = 177.12;
+const level1_bottom = 0;
+const level1_top = 237100;
+const level1_tax = 0.18;
+
+let level2_bottom = 237101;
+let level2_top = 370500;
+let level2_tax = 0.26;
+
+let level3_bottom = 370501;
+let level3_top = 512800;
+let level3_tax = 0.31;
+let level4_bottom = 512801;
+let level4_top = 673000;
+let level4_tax = 0.36;
+let level5_bottom = 673001;
+let level5_top = 857900;
+let level5_tax = 0.39;
+let level6_bottom = 857901;
+let level6_top = 1817000;
+let level6_tax = 0.41;
+let level6_bottom = 1817001;
+let level6_top = 99999900000;
+let level6_tax = 0.45;
+let UIFcap = 177.12;
 
 //rebates
-var annualRebatenderunder = 17235;
-var annualRebatenderbetween = (annualRebatenderunder + 9444);
-var annualRebatenderover = (annualRebatenderbetween + 3145);
+let annualRebatenderunder = 17235;
+let annualRebatenderbetween = (annualRebatenderunder + 9444);
+let annualRebatenderover = (annualRebatenderbetween + 3145);
 
 //trigger payeCalc from 3 age brackets
-var chosenAge = document.getElementsByName('age');
-for (var i = chosenAge.length; i--;) {
+let chosenAge = document.getElementsByName('age');
+for (let i = chosenAge.length; i--;) {
     chosenAge[i].onchange = function () {
         if (this.value == 1) {
             theVal = annualRebatenderunder;
@@ -120,8 +123,8 @@ function resetCalc() {
 
 //currency formatting
 function currencyFormat(num: number) {
-    var monthlyIncome = 0;
-    var vatamount = 0;
-    var totalamount = 0;
+    let monthlyIncome = 0;
+    let vatamount = 0;
+    let totalamount = 0;
     return `R${num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}`
 }
