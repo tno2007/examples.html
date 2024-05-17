@@ -12,38 +12,54 @@
 
   <body>
     <div id="app">
-      <input type="number" class="block" v-model="a" />
-      <input type="number" class="block" v-model="b" />
-      <button
-        class="m-1 p-2 text-white bg-blue-600 rounded focus:outline-none block"
-        @click="calculate"
+      <div>
+        <label
+          ><input
+            type="radio"
+            name="bornInTheUK"
+            v-model="bornInTheUK"
+            :value="true"
+            required=""
+          />
+          Yes</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="bornInTheUK"
+            v-model="bornInTheUK"
+            :value="false"
+            required=""
+          />
+          No</label
+        >
+      </div>
+
+      <div v-if="bornInTheUK === false">A</div>
+
+      <div v-if="bornInTheUK === false">B</div>
+
+      <div
+        id="ukDepartureDateRow"
+        class="form-group"
+        v-if="bornInTheUK || bornInTheUK === false"
       >
-        Calculate
-      </button>
-      <span>{{ answer }}</span>
+        C
+      </div>
     </div>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
-      const { createApp } = Vue;
+      const { createApp, ref } = Vue;
 
       createApp({
-        data() {
+        setup() {
+          const bornInTheUK = ref(null);
+          const SelectedNumOfChildren = ref(null);
           return {
-            a: 0,
-            b: 0,
-            answer: null,
+            bornInTheUK,
+            SelectedNumOfChildren,
           };
-        },
-        methods: {
-          calculate() {
-            this.answer = parseInt(this.a) + parseInt(this.b);
-          },
-        },
-        computed: {
-          // any computed variables defined here
-        },
-        mounted() {
-          // if you want to run code when page/app has loaded
         },
       }).mount("#app");
     </script>
