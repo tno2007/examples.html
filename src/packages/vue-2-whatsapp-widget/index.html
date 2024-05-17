@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vue-whatsapp-widget</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div id="app">
+      <span>{{ message }}</span>
+      <vue-whatsapp-widget></vue-whatsapp-widget>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/vue@2.6.14/dist/vue.js,npm/vue-whatsapp-widget@1.0.0/dist/vueWhatsappWidget.umd.js"></script>
+
+    <script>
+      //const { createApp } = Vue;
+
+      Vue.component("vue-whatsapp-widget", vueWhatsappWidget);
+
+      var app = new Vue({
+        components: {
+          //vueWhatsappWidget: vueWhatsappWidget,
+        },
+        el: "#app",
+        data: {
+          message: "Hello Vue!",
+        },
+      });
+    </script>
+  </body>
+</html>

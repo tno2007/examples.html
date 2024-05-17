@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <input type="number" class="block" v-model="a" />
+      <input type="number" class="block" v-model="b" />
+      <button
+        class="m-1 p-2 text-white bg-blue-600 rounded focus:outline-none block"
+        @click="calculate"
+      >
+        Calculate
+      </button>
+      <span>{{ answer }}</span>
+    </div>
+
+    <script>
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            a: 0,
+            b: 0,
+            answer: null,
+          };
+        },
+        methods: {
+          calculate() {
+            this.answer = parseInt(this.a) + parseInt(this.b);
+          },
+        },
+        computed: {
+          // any computed variables defined here
+        },
+        mounted() {
+          // if you want to run code when page/app has loaded
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

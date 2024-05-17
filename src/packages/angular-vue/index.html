@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" hidden>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- unocss 
+    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css"
+    />
+    -->
+  </head>
+  <body>
+
+    <div id="app" class="p-10"></div>
+
+
+
+    <div ng-controller="MyController as ctrl">
+      <my-component
+        v-props="ctrl.user"
+        v-props-is-admin="ctrl.isAdmin"
+        v-on-button-clicked="ctrl.handleClick"
+      ></my-component>
+    </div>
+
+    <!--
+    <script type="module" src="app.ts"></script>
+    
+    <script type="module" src="../../node_modules/vue/dist/vue.global.js"></script> 
+    <script type="module" src="../../node_modules/vue/dist/"></script> 
+    <script>
+        console.log(Vue);
+    </script>    
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    //
+    -->
+
+    
+    <script type="module" src="app.ts"></script>
+  </body>
+</html>
