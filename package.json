@@ -32,7 +32,8 @@
     "tailwind-testdrive:build": "scripty",
     "html-validation": "pnpm parcel ./src/html-validation/index.html",
     "angular-vue": "pnpm parcel ./src/angular-vue/index.html",
-    "angular-vue:build": "pnpm parcel build ./src/angular-vue/index.html --dist-dir ./dist/angular-vue"
+    "angular-vue:build": "pnpm parcel build ./src/angular-vue/index.html --dist-dir ./dist/angular-vue",
+    "esm-vue-auto-animate": "pnpm parcel ./src/esm-vue-auto-animate/index.html"
   },
   "keywords": [],
   "author": "",
