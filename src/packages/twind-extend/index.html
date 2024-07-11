@@ -12,9 +12,13 @@
       }
     </style>
 
-    <script src="https://cdn.twind.style" crossorigin></script>
-    <script>
+    <script type="module" src="app.ts"></script>
+
+    <!-- <script src="../../../node_modules/@twind/cdn/cdn.global.js"></script> -->
+
+    <!-- <script>
       twind.install({
+        hash: false,
         theme: {
           extend: {
             colors: {
@@ -24,9 +28,9 @@
           },
         },
       });
-    </script>
+    </script> -->
   </head>
-  <body class="!block" style="display: none">
+  <body class="!block" data-style="display: none">
     <!-- prettier-ignore -->
     <div class="antialiased bg-gray-50 dark:bg-gray-900">
       <nav
